@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta content="text/html;charset=utf-8" http-equiv="Content-Type">
+        <meta content="utf-8" http-equiv="encoding">
+        <link rel="stylesheet" type="text/css" href="styles.css">
+        <script type="text/javascript" src="scripts.js"></script>
+    </head>
+    <body>
+        <h1>Regra de Hebb</h1>
+        <p>Trabalho 03 de Aprendizagem de Máquina<br>Nome: Rafael Daily Santos Martins <br>Matrícula: 12011ECP027</p>
+        <div class="table">
+            <table>
+                <tr>
+                    <th>&nbsp&nbsp&nbspS1&nbsp&nbsp&nbsp</th>
+                    <th>&nbsp&nbsp&nbspS2&nbsp&nbsp&nbsp</th>
+                    <th>&nbsp&nbsp&nbspEntrada&nbsp&nbsp&nbsp</th>
+                </tr>
+                <tr>
+                    <td>1</td>
+                    <td>1</td>
+                    <td>
+                        <select id="t0">
+                        <option selected value="1">1</option>
+                        <option value="-1">-1</option>
+                        </select>
+                    </td>
+                </tr>
+                <tr>
+                    <td>-1</td>
+                    <td>1</td>
+                    <td>
+                        <select id="t1">
+                        <option selected value="1">1</option>
+                        <option value="-1">-1</option>
+                        </select>
+                    </td>
+                </tr>
+                <tr>
+                    <td>1</td>
+                    <td>-1</td>
+                    <td>
+                        <select id="t2">
+                        <option selected value="1">1</option>
+                        <option value="-1">-1</option>
+                        </select>
+                    </td>
+                </tr>
+                <tr>
+                    <td>-1</td>
+                    <td>-1</td>
+                    <td>
+                        <select id="t3">
+                        <option selected value="1">1</option>
+                        <option value="-1">-1</option>
+                        </select>
+                    </td>
+                </tr>
+            </table>
+        </div>
+        <button type="button" id="train" onclick="train()">Treinar Rede Neural</button>
+        <br>
+        <button type="button" id="test" onclick="test()">Testar Rede Neural</button>
+        <br>
+        <br>
+        <br>
+        <br>
+        <p>&emsp;&emsp;&emsp;Peso w1 = <input id="w1" type="text" disabled>&emsp;&emsp;Peso w2 = <input id="w2" type="text" disabled>&emsp;&emsp;Bias = <input id="bias" type="text" disabled></p>
+        <div class="table">
+            <table>
+                <tr>
+                    <th>&nbsp&nbsp&nbspS1&nbsp&nbsp&nbsp</th>
+                    <th>&nbsp&nbsp&nbspS2&nbsp&nbsp&nbsp</th>
+                    <th>&nbsp&nbsp&nbspSaída&nbsp&nbsp&nbsp</th>
+                </tr>
+                <tr>
+                    <td>1</td>
+                    <td>1</td>
+                    <td>
+                        <input id="y0" type="text" disabled>
+                    </td>
+                </tr>
+                <tr>
+                    <td>-1</td>
+                    <td>1</td>
+                    <td>
+                        <input id="y1" type="text" disabled>
+                    </td>
+                </tr>
+                <tr>
+                    <td>1</td>
+                    <td>-1</td>
+                    <td>
+                        <input id="y2" type="text" disabled>
+                    </td>
+                </tr>
+                <tr>
+                    <td>-1</td>
+                    <td>-1</td>
+                    <td>
+                        <input id="y3" type="text" disabled>
+                    </td>
+                </tr>
+            </table>
+        </div>
+        <br>
+        <br>
+        <br>
+        <br>
+        <br>
+        <br>
+        <br>
+        <p>*A regra de Hebb não encontrará os pesos das portas lógicas XOR e XNOR</p>
+    </body>
+</html>

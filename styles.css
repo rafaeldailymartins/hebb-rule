@@ -1,0 +1,41 @@
+.table{
+    margin-left: 50px;
+    margin-right: auto;
+    margin-top: 50px;
+    width: 6em
+}
+
+table{
+    float: left;
+    background: #FFFFF0;
+}
+
+td{
+    border: 1px solid black;
+    text-align: center;
+}
+
+th{
+    border: 1px solid black;
+    background: #F0FFF0;
+    text-align: center;
+}
+
+select{
+    width: 90px;
+}
+input{
+    width: 90px;
+    text-align: center;
+}
+
+#train{
+    margin-top: 50px;
+    margin-left: 50px;
+    width: 250px;
+}
+#test{
+    margin-top: 1px;
+    margin-left: 50px;
+    width: 250px;
+}
